@@ -1,0 +1,382 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Event Travel</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/evenTravel/logo/png/eventravel_FullLogo.png">
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/rangeSlider.css">
+</head>
+
+<body>
+    <!-- Preloader Start -->
+    <div id="preloader-active">
+        <div class="preloader d-flex align-items-center justify-content-center">
+            <div class="preloader-inner position-relative">
+                <div class="preloader-circle"></div>
+                <div class="preloader-img pere-text">
+                    <img src="assets/img/evenTravel/logo/png/eventravel_FullLogo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Preloader Start -->
+    <header>
+        <!-- Header Start -->
+        <div class="header-area">
+            <div class="main-header ">
+                <div class="header-bottom  header-sticky">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <!-- Logo -->
+                            <div class="col-xl-2 col-lg-2 col-md-1">
+                                <div class="logo">
+                                    <a href="index.html"><img style="height: 100px;"
+                                            src="assets/img/evenTravel/logo/png/eventravel_FullLogo.png" alt=""></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+    </header>
+
+    <main>
+
+        <!-- slider Area Start-->
+        <div class="slider-area ">
+            <!-- Mobile Menu -->
+            <div class="slider-active">
+                <div class="single-slider hero-overly  slider-height d-flex align-items-center"
+                    data-background="./assets/img/evenTravel/main_bg.jpg">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-9 col-lg-9 col-md-9">
+                                <div class="hero__caption">
+                                    <h1>Create your <span>Next Travel!</span> </h1>
+                                    <p>Party Time</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Search Box -->
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <!-- form -->
+                                <form id="form1" autocomplete="off" class="search-box">
+                                    <div class="input-form mb-30 autocomplete">
+                                        <input id="locationInput" type="text" name="myCountry" placeholder="Location">
+                                    </div>
+                                    <div class="select-form mb-30">
+                                        <div class="select-itms">
+                                            <select name="select" id="mainType">
+                                                <option value="">Type</option>
+                                                <option value="1">Live Show</option>
+                                                <option value="2">Sporting Events</option>
+                                                <option value="3">Yoga Festivals</option>
+                                                <option value="4">History</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="select-form mb-30">
+                                        <div hidden class="select-itms" id="secondeTypeDive">
+
+                                        </div>
+                                    </div>
+                                    <div class="search-form mb-30">
+                                        <a id="nextBtnToSecondeForm">Next</a>
+                                    </div>
+                                </form>
+                                <!-- second part form start -->
+                                <form id="form2" action="#" class="search-box">
+                                    <div class="search-form mb-30">
+                                        <a id="backToForm1">Back</a>
+                                    </div>
+                                    <div class="input-form mb-30">
+                                        <input id="fromWhenInput" class="textbox-n" type="text" placeholder="From when"
+                                            onclick="this.type='date'">
+                                    </div>
+                                    <div class="input-form mb-30">
+                                        <input id="toWhenInput" class="textbox-n" type="text" placeholder="To when"
+                                            onclick="this.type='date'">
+                                    </div>
+                                    <div id="inputDiv">
+                                        <div id="etiqueta"></div>
+                                        <input id="interestedDays" type="range" value='5' min="1" max="15"
+                                            autocomplete="off">
+                                    </div>
+                                    <div class="search-form mb-30">
+                                        <a id="searchEventsBtn">Search</a>
+                                    </div>
+                                </form>
+                                <!-- second part form end -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- slider Area End-->
+
+        <!-- Favourite Places Start -->
+        <div id="resultDiv" class="favourite-place place-padding">
+            <div class="container">
+                <!-- Section Tittle -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="section-tittle text-center">
+                            <span>FEATURED TOURS Packages</span>
+                            <h2>Favourite Places</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-place mb-30">
+                            <div class="place-img">
+                                <img src="assets/img/service/services1.jpg" alt="">
+                            </div>
+                            <div class="place-cap">
+                                <div class="place-cap-top">
+                                    <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
+                                    <h3><a href="#">The Dark Forest Adventure</a></h3>
+                                    <p class="dolor">$1870 <span>/ Per Person</span></p>
+                                </div>
+                                <div class="place-cap-bottom">
+                                    <ul>
+                                        <li><i class="far fa-clock"></i>3 Days</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Los Angeles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-place mb-30">
+                            <div class="place-img">
+                                <img src="assets/img/service/services2.jpg" alt="">
+                            </div>
+                            <div class="place-cap">
+                                <div class="place-cap-top">
+                                    <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
+                                    <h3><a href="#">The Dark Forest Adventure</a></h3>
+                                    <p class="dolor">$1870 <span>/ Per Person</span></p>
+                                </div>
+                                <div class="place-cap-bottom">
+                                    <ul>
+                                        <li><i class="far fa-clock"></i>3 Days</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Los Angeles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6">
+                        <div class="single-place mb-30">
+                            <div class="place-img">
+                                <img src="assets/img/service/services3.jpg" alt="">
+                            </div>
+                            <div class="place-cap">
+                                <div class="place-cap-top">
+                                    <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
+                                    <h3><a href="#">The Dark Forest Adventure</a></h3>
+                                    <p class="dolor">$1870 <span>/ Per Person</span></p>
+                                </div>
+                                <div class="place-cap-bottom">
+                                    <ul>
+                                        <li><i class="far fa-clock"></i>3 Days</li>
+                                        <li><i class="fas fa-map-marker-alt"></i>Los Angeles</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Favourite Places End -->
+    </main>
+
+    <!-- JS here -->
+
+    <!-- All JS Custom Plugins Link Here here -->
+    <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
+
+    <!-- Jquery, Popper, Bootstrap -->
+    <script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <!-- Jquery Mobile Menu -->
+    <script src="./assets/js/jquery.slicknav.min.js"></script>
+
+    <!-- Jquery Slick , Owl-Carousel Plugins -->
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <!-- One Page, Animated-HeadLin -->
+    <script src="./assets/js/wow.min.js"></script>
+    <script src="./assets/js/animated.headline.js"></script>
+    <script src="./assets/js/jquery.magnific-popup.js"></script>
+
+    <!-- Scrollup, nice-select, sticky -->
+    <script src="./assets/js/jquery.scrollUp.min.js"></script>
+    <script src="./assets/js/jquery.nice-select.min.js"></script>
+    <script src="./assets/js/jquery.sticky.js"></script>
+
+    <!-- contact js -->
+    <script src="./assets/js/contact.js"></script>
+    <script src="./assets/js/jquery.form.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/mail-script.js"></script>
+    <script src="./assets/js/jquery.ajaxchimp.min.js"></script>
+
+    <!-- Jquery Plugins, main Jquery -->
+    <script src="./assets/js/plugins.js"></script>
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/locationAutoComplete.js"></script>
+    <script>
+        autocomplete(document.getElementById("locationInput"), countries);
+    </script>
+    <script src="./assets/js/rangeSlider.js"></script>
+    <script>
+        document.getElementById("form2").style.display = "none"
+        document.getElementById("resultDiv").style.display = "none"
+        var locationInput = document.getElementById("locationInput")
+        var mainType = document.getElementById("mainType");
+        var secondeTypeDive = document.getElementById("secondeTypeDive");
+        var nextBtnToSecondeForm = document.getElementById("nextBtnToSecondeForm")
+        var searchEventsBtn = document.getElementById("searchEventsBtn")
+        mainType.onchange = function () {
+            if (mainType.value != "") {
+                let secondeSelectExites = document.getElementById("secondeType")
+                if (secondeSelectExites == null) {
+                    let secondeType = createSecondeTypeSelect();
+                    let niceSelect = createNiceSelect();
+                    secondeTypeDive.appendChild(secondeType);
+                    secondeTypeDive.appendChild(niceSelect);
+                    secondeTypeDive.removeAttribute("hidden");
+
+                }
+            }
+        }
+
+        function createSecondeTypeSelect() {
+            let secondeType = document.createElement("SELECT");
+            secondeType.setAttribute("id", "secondeType");
+            secondeType.setAttribute("name", "select");
+            secondeType.style.display = "none";
+            for (i = 0; i < 4; i++) {
+                let option = document.createElement("option");
+                option.text = `option ${i}`;
+                option.value = i + 10;
+                secondeType.appendChild(option);
+            }
+            return secondeType;
+        }
+
+        function createNiceSelect() {
+            let niceSelect = document.createElement("div");
+            niceSelect.classList.add("nice-select")
+            niceSelect.setAttribute("tabindex", "0")
+            let niceSelectSpanChild = document.createElement("span");
+            niceSelectSpanChild.setAttribute("id", "niceSelectSpanChild")
+            let niceSelectUlChild = document.createElement("ul");
+            niceSelectUlChild.classList.add("list")
+            for (i = 0; i < 4; i++) {
+                let li = document.createElement("li");
+                li.setAttribute("value", i == 0 ? "" : i)
+                li.classList.add("option")
+                li.classList.add("focus")
+                if (i == 0) {
+                    li.classList.add("selected")
+                }
+                li.innerHTML = i == 0 ? "Type" : `option ${i}`;
+                niceSelectUlChild.appendChild(li);
+            }
+
+            niceSelectSpanChild.classList.add("current")
+            niceSelectSpanChild.textContent = "Type"
+
+            niceSelect.appendChild(niceSelectSpanChild)
+            niceSelect.appendChild(niceSelectUlChild)
+
+
+            return niceSelect
+        }
+
+        function parseDate(str) {
+            var mdy = str.split('-');
+            return new Date(mdy[1], mdy[0], mdy[2]);
+        }
+
+        function datediff(first, second) {
+            // Take the difference between the dates and divide by milliseconds per day.
+            // Round to nearest whole number to deal with DST.
+            return Math.round((second - first) / (1000 * 60 * 60 * 24));
+        }
+
+        nextBtnToSecondeForm.onclick = function () {
+            let niceSelectSpanChild = document.getElementById("niceSelectSpanChild")
+            let form1 = document.getElementById("form1")
+            let form2 = document.getElementById("form2")
+            if (locationInput.value != "" && mainType.value != "" && niceSelectSpanChild.innerHTML != "Type") {
+                form1.style.display = "none"
+                form2.style.display = "flex"
+            }
+            else {
+                alert("you have to fill all inputs")
+            }
+        }
+
+        backToForm1.onclick = function () {
+            document.getElementById("form1").style.display = "flex"
+            document.getElementById("form2").style.display = "none"
+        }
+
+        searchEventsBtn.onclick = function () {
+            let locationInputValue = locationInput.value
+            let mainTypeValue = mainType.value
+            let niceSelectSpanChildValue = document.getElementById("niceSelectSpanChild").innerHTML
+            let fromWhenInputValue = document.getElementById("fromWhenInput").value
+            let toWhenInputValue = document.getElementById("toWhenInput").value
+            let interestedDays = document.getElementById("interestedDays").value
+            let difference = datediff(parseDate(fromWhenInputValue), parseDate(toWhenInputValue))
+            console.log("difference = ", difference)
+            if (fromWhenInputValue == '' || toWhenInputValue == '') {
+                alert("you have to fill all inputs")
+            }
+            else if (toWhenInputValue < fromWhenInputValue) {
+                alert("Return time cannot be less than departure time")
+            }
+            else if (interestedDays > difference) {
+                alert("Quantity of days does not match the date range")
+            }
+            else {
+                document.getElementById("resultDiv").style.display = "flex"
+                $([document.documentElement, document.body]).animate({
+                    scrollTop: $("#resultDiv").offset().top
+                }, 2000);
+            }
+        }
+
+    </script>
+</body>
+
+</html>
